@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="turtlebot3_agv">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.142849000164505 0.000827450108183816 0.0940655414330139"
+        rpy="0 0 0" />
+      <mass
+        value="6.53567405966969" />
+      <inertia
+        ixx="0.0709849720889641"
+        ixy="1.92440674535796E-06"
+        ixz="0.00855985818211809"
+        iyy="0.0849332238903195"
+        iyz="7.23923922623129E-09"
+        izz="0.118915459813821" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://turtlebot3_agv/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://turtlebot3_agv/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Wheel_right_link">
+    <inertial>
+      <origin
+        xyz="1.42869155533853E-07 5.01976036182839E-08 0.0126479412682328"
+        rpy="0 0 0" />
+      <mass
+        value="0.314315912620171" />
+      <inertia
+        ixx="0.000639654627112855"
+        ixy="9.76337195626606E-11"
+        ixz="3.37642907706249E-10"
+        iyy="0.000639653948478055"
+        iyz="1.18632076877269E-10"
+        izz="0.00119596472094067" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://turtlebot3_agv/meshes/Wheel_right_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.796078431372549 0.823529411764706 0.937254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://turtlebot3_agv/meshes/Wheel_right_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Wheel_right_joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.144850779034482 0"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Wheel_right_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="Wheel_left_link">
+    <inertial>
+      <origin
+        xyz="1.48512857914285E-07 -2.95859081029821E-08 -0.0126479412682294"
+        rpy="0 0 0" />
+      <mass
+        value="0.314315912620173" />
+      <inertia
+        ixx="0.00063965464087898"
+        ixy="8.1661077047697E-13"
+        ixz="-3.50980676451552E-10"
+        iyy="0.000639653934711934"
+        iyz="6.99204260424775E-11"
+        izz="0.00119596472094068" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://turtlebot3_agv/meshes/Wheel_left_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.796078431372549 0.823529411764706 0.937254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://turtlebot3_agv/meshes/Wheel_left_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Wheel_left_joint"
+    type="continuous">
+    <origin
+      xyz="0 0.144850779034479 0"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Wheel_left_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="Wheel_small_1_link">
+    <inertial>
+      <origin
+        xyz="0.0238758097582441 0.046525963467403 0.00243393414299073"
+        rpy="0 0 0" />
+      <mass
+        value="0.167454819249336" />
+      <inertia
+        ixx="6.25892274953707E-05"
+        ixy="-3.12319582844251E-06"
+        ixz="-1.67934202325051E-06"
+        iyy="7.61138201175506E-05"
+        iyz="-3.23742840709858E-07"
+        izz="8.40945355639417E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://turtlebot3_agv/meshes/Wheel_small_1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://turtlebot3_agv/meshes/Wheel_small_1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Wheel_small_1_joint"
+    type="fixed">
+    <origin
+      xyz="0.324561380831399 0.1153 0.022292142743223"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Wheel_small_1_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Wheel_small_2_link">
+    <inertial>
+      <origin
+        xyz="0.0239966492860011 0.0465259605815261 0.000372265052759346"
+        rpy="0 0 0" />
+      <mass
+        value="0.1674548677509" />
+      <inertia
+        ixx="6.24198356690566E-05"
+        ixy="-3.13946500757385E-06"
+        ixz="-2.83748175989573E-07"
+        iyy="7.61138228251399E-05"
+        iyz="-5.40336824978955E-08"
+        izz="8.42639415171442E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://turtlebot3_agv/meshes/Wheel_small_2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://turtlebot3_agv/meshes/Wheel_small_2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Wheel_small_2_joint"
+    type="fixed">
+    <origin
+      xyz="0.322061380831399 -0.115299999999999 0.0222921427432125"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Wheel_small_2_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Base_scan">
+    <inertial>
+      <origin
+        xyz="-0.00178136774153781 0.000215628651223029 -0.0233629715090974"
+        rpy="0 0 0" />
+      <mass
+        value="0.17985830348468" />
+      <inertia
+        ixx="6.36064511774619E-05"
+        ixy="-3.40912419722572E-07"
+        ixz="1.80430676368712E-06"
+        iyy="6.04319702079155E-05"
+        iyz="-1.84572810482903E-07"
+        izz="8.20591002857804E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://turtlebot3_agv/meshes/Base_scan.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.949019607843137 0.949019607843137 0.949019607843137 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://turtlebot3_agv/meshes/Base_scan.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Scan_joint"
+    type="fixed">
+    <origin
+      xyz="0.392242528010143 -0.000156533163617606 0.0793945220729009"
+      rpy="0 0 -0.00302113884462652" />
+    <parent
+      link="base_link" />
+    <child
+      link="Base_scan" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

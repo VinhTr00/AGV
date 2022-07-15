@@ -1,0 +1,8 @@
+prefix=/home/vinhtran/catkin_ws/devel
+
+Name: turtlebot3_agv
+Description: Description of turtlebot3_agv
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
