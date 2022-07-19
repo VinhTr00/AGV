@@ -1,0 +1,13 @@
+<package>
+  <description brief="myAGV">
+
+     myAGV
+
+  </description>
+  <author>vinhtran</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/myAGV</url>
+  <depend package="differential_drive"/>
+
+</package>
