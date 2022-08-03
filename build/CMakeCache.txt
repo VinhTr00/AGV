@@ -1137,6 +1137,12 @@ teb_local_planner_LIB_DEPENDS:STATIC=general;amd;general;btf;general;camd;genera
 //Value Computed by CMake
 teb_local_planner_SOURCE_DIR:STATIC=/home/vinhtran/catkin_ws/src/teb_local_planner
 
+//Value Computed by CMake
+teb_local_planner_tutorials_BINARY_DIR:STATIC=/home/vinhtran/catkin_ws/build/teb_local_planner_tutorials
+
+//Value Computed by CMake
+teb_local_planner_tutorials_SOURCE_DIR:STATIC=/home/vinhtran/catkin_ws/src/teb_local_planner_tutorials
+
 //The directory containing a CMake configuration file for tf2.
 tf2_DIR:PATH=/opt/ros/melodic/share/tf2/cmake
 
