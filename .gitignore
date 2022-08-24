@@ -1,3 +1,5 @@
 .catkin_workspace
-.gitignore
 .vscode
+build/
+devel/
+.gitignore

@@ -150,6 +150,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/vinhtran/catkin_ws/build/turtlebot3/turtlebot3_slam/cmake_install.cmake")
   include("/home/vinhtran/catkin_ws/build/turtlebot3/turtlebot3_teleop/cmake_install.cmake")
   include("/home/vinhtran/catkin_ws/build/turtlebot3_agv/cmake_install.cmake")
+  include("/home/vinhtran/catkin_ws/build/global_planner/cmake_install.cmake")
   include("/home/vinhtran/catkin_ws/build/turtlebot3/turtlebot3_description/cmake_install.cmake")
 
 endif()
